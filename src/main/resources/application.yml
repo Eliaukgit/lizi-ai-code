@@ -1,4 +1,9 @@
 spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/lizi_ai_code?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: 12345678
   application:
     name: lizi-ai-code
 server:
@@ -16,3 +21,5 @@ knife4j:
   enable: true
   setting:
     language: zh_cn
+
+

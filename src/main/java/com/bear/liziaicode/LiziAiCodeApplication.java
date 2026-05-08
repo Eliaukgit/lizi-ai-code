@@ -1,5 +1,6 @@
 package com.bear.liziaicode;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
@@ -9,6 +10,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 //你可以在方法执行时通过AopContext.currentProxy(）获取当前的代理对象。
 @EnableAspectJAutoProxy(exposeProxy = true)
 @SpringBootApplication
+@MapperScan("com.bear.liziaicode.mapper")
 public class LiziAiCodeApplication {
 
     public static void main(String[] args) {
