@@ -34,3 +34,6 @@ build/
 
 ### Qoder AI ###
 .qoder/
+
+### CUSTOM ###
+application-local.yml
